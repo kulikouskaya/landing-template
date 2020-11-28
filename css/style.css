@@ -1,0 +1,518 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'PT Sans', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: #000000;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.btn {
+    height: 50px;
+    padding: 16px 33px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 0px 10px;
+}
+
+.header-top-lang {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-top-lang__item {
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 19px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0px 4px;
+    margin-right: 10px;
+}
+
+.item-active {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 19px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0px 4px;
+    margin-right: 10px;
+}
+
+.header-top__link {
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    color: rgb(133, 141, 24);
+    letter-spacing: 2px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.header-bottom__column {
+    flex: 0 0 33.333%
+}
+
+.header-bottom-menu__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-bottom-menu__list li:last-child {
+    padding: 0px;
+}
+
+.header-bottom-menu__link {
+    color: #000000;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.header-bottom-menu__link:hover {
+    color: rgb(133, 141, 24);
+    text-decoration: underline;
+}
+
+.header-logo {
+    display: block;
+    text-align: center;
+}
+
+.header-logo__text {
+    color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    display: block;
+}
+
+.header-logo__img {
+    display: inline-block;
+    margin: 13px 0px 22px 0px;
+}
+
+.header-menu_icon {
+    display: none;
+}
+
+.private {
+    max-height: 430px;
+    display: flex;
+    background-color: #000;
+    margin-bottom: 75px;
+}
+
+.private__column {
+    flex: 0 0 50%;
+}
+
+.private__image {
+    height: 100%;
+    overflow: hidden;
+}
+
+.private__image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.private-body {
+    padding: 75px 0px 75px 60px;
+}
+
+.private-body-content {
+    max-width: 305px;
+}
+
+.private-body__title {
+    margin-bottom: 30px;
+}
+
+.private-body__text {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 45px;
+}
+
+.private-body-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.private-body-buttons__link {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+.product {
+    margin-bottom: 40px;
+}
+
+.product-body {
+    display: flex;
+}
+
+.product__column {
+    flex: 0 0 25%;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-item__img {
+    margin-bottom: 25px;
+    max-height: 220px;
+    overflow: hidden;
+}
+
+.product-item__img img {
+    min-width: 180px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-item__title {
+    margin-bottom: 30px;
+    max-width: 175px;
+    height: 60px;
+}
+
+.product-item__text {
+    color: #000000;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    max-width: 175px;
+    flex: 1 1 auto;
+}
+
+.product-item__btn {
+    width: 155px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.product-item__link {
+    color: #000;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    display: block;
+}
+
+.why-top {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+
+.why-top__column {
+    flex: 0 0 50%;
+    height: 100%;
+}
+
+.why-top__text {
+    color: #ffffff;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.why-top__img {
+    height: 180px;
+    overflow: hidden;
+}
+
+.why-top__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.why-body {
+    background-color: #ebebeb;
+    padding-top: 50px;
+
+}
+
+.why-body-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why-body__column {
+    flex: 0 0 50%;
+    padding-bottom: 50px;
+}
+
+.why-body-item {
+    display: flex;
+}
+
+.why-body-item__icon {
+    flex: 0 0 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-body-item-body {
+    flex: 1 1 auto;
+    padding-left: 11px;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+}
+
+.why-body-item__title {
+    margin-bottom: 25px;
+    flex: 1 1 auto;
+}
+
+.why-body-item__text {
+    color: #000000;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.contact {
+    padding-top: 80px;
+}
+
+.contact__title {
+    color: #000000;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    font-size: 50px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+
+}
+
+.contact-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+}
+
+.contact-top__column {
+    flex: 0 0 50%;
+    margin-bottom: 20px;
+}
+
+.contact-body__item {
+    font-size: 15px;
+    padding-left: 35px;
+    display: inline-block;
+    line-height: 27px;
+    color: #000;
+}
+
+.contact-body__item--1 {
+    background: url(../icons/vv.png) left no-repeat;
+}
+
+.contact-body__item--2 {
+    background: url(../icons/email.png) left no-repeat;
+}
+
+.contact-body__item--3 {
+    background: url(../icons/telephone.png) left no-repeat;
+}
+
+.contact-social {
+    display: flex;
+}
+
+.contact-social__item {
+    margin-right: 30px;
+}
+
+.contact-social__item:last-child {
+    margin-right: 0px;
+}
+
+.contact-content {
+    display: flex;
+    max-height: 480px;
+    background-color: #000;
+}
+
+.contact-content__column {
+    flex: 0 0 50%
+}
+
+.contact-content__img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.contact-content__img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-content-form {
+    padding: 55px 0px 30px 60px;
+}
+
+.contact-content-form__title {
+    color: #ffffff;
+    font-family: "AkzidenzGroteskBQ-Super Fonts";
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 30px;
+}
+
+.contact-content-form-body {
+    max-width: 375px;
+}
+
+.contact-content-form-line {
+    margin-bottom: 25px;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    display: block;
+    padding: 0px 18px;
+    color: #959595;
+    font-size: 15px;
+    line-height: 25px;
+    border: 2px solid #959595;
+    background-color: #252525;
+}
+
+textarea.input {
+    resize: none;
+    height: 100px;
+    padding: 18px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__column {
+    flex: 0 0 50%;
+    padding: 30px 0px;
+}
+
+.footer__logo {
+    padding-left: 200px;
+}
+
+.footer__logo img {
+    display: block;
+}
+
+.footer__text {
+    color: #4d4d4d;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: underline;
+}
