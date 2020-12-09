@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/4a86e4751d2650701d8bb25433b8781e?family=Akzidenz-Grotesk+BQ+Super"
         rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -18,7 +19,7 @@
             <div class="container">
                 <div class="header-top">
                     <div class="header-top-lang">
-                        <div class="header-top-lang__item item-active">EN</div>
+                        <div class="header-top-lang__item lang__item--active">EN</div>
                         <div class="header-top-lang__item">RU</div>
                         <div class="header-top-lang__item">ESP</div>
                     </div>
@@ -57,8 +58,10 @@
         <div class="content">
             <section class="private">
                 <div class="private__column">
-                    <div class="private__image"><img src="img/private.jpg" alt="catering">
-                    </div>
+                    <picture class="private__image">
+                        <source srcset="img/private.webp" type="image/webp">
+                        <img src="img/private.jpg" alt="catering">
+                    </picture>
                 </div>
                 <div class="private__column">
                     <div class="private-body">
@@ -67,7 +70,7 @@
                             <p class="private-body__text">Treat your guests to a beautifully plated dinner, hand-crafted
                                 canapes or a casual BBQ.</p>
                             <div class="private-body-buttons">
-                                <a href="#" class="private-body-buttons__item btn btn-white">Get a quote</a>
+                                <a href="#" class="private-body-buttons__item btn btn--white">Get a quote</a>
                                 <a href="#" class="private-body-buttons__link">View menus</a>
                             </div>
                         </div>
@@ -84,7 +87,7 @@
                                 <h2 class="product-item__title">Corporate catering</h2>
                                 <div class="product-item__text">We are able to serve events from 2 to 2000 guests and
                                     always reasonable prices.</div>
-                                <a href="#" class="product-item__btn btn btn-black">Get a quote</a>
+                                <a href="#" class="product-item__btn btn btn--black">Get a quote</a>
                                 <a href="#" class="product-item__link">View menus</a>
                             </div>
                         </div>
@@ -94,7 +97,7 @@
                                 <h2 class="product-item__title">Private catering</h2>
                                 <div class="product-item__text">Fresh, seasonal and simple cuisine. Food is our business
                                     and our passion.</div>
-                                <a href="#" class="product-item__btn btn btn-black">Get a quote</a>
+                                <a href="#" class="product-item__btn btn btn--black">Get a quote</a>
                                 <a href="#" class="product-item__link">View menus</a>
                             </div>
                         </div>
@@ -104,7 +107,7 @@
                                 <h2 class="product-item__title">Online Ordering</h2>
                                 <div class="product-item__text">We use only the best organic ingredients and gluten and
                                     dairy free cooking.</div>
-                                <a href="#" class="product-item__btn btn btn-black">Get a quote</a>
+                                <a href="#" class="product-item__btn btn btn--black">Get a quote</a>
                                 <a href="#" class="product-item__link">View menus</a>
                             </div>
                         </div>
@@ -114,7 +117,7 @@
                                 <h2 class="product-item__title">Wedding catering</h2>
                                 <div class="product-item__text">Successful catering is about organisation, high quality
                                     service, and great food.</div>
-                                <a href="#" class="product-item__btn btn btn-black">Get a quote</a>
+                                <a href="#" class="product-item__btn btn btn--black">Get a quote</a>
                                 <a href="#" class="product-item__link">View menus</a>
                             </div>
                         </div>
@@ -136,7 +139,7 @@
                         <div class="why-body-row">
                             <div class="why-body__column">
                                 <div class="why-body-item">
-                                    <div class="why-body-item__icon"><img src="icons/1-advantage.svg" alt="plate"></div>
+                                    <span class="icon-platter"></span>
                                     <div class="why-body-item-body">
                                         <h2 class="why-body-item__title">Always fresh</h2>
                                         <p class="why-body-item__text">Fresh, seasonal and simple cuisine. Food is our
@@ -146,7 +149,7 @@
                             </div>
                             <div class="why-body__column">
                                 <div class="why-body-item">
-                                    <div class="why-body-item__icon"><img src="icons/2-advantage.svg" alt="chef"></div>
+                                    <span class="icon-cap"></span>
                                     <div class="why-body-item-body">
                                         <h2 class="why-body-item__title">Clean and Healthy</h2>
                                         <p class="why-body-item__text">We use only the best organic ingredients and
@@ -156,7 +159,7 @@
                             </div>
                             <div class="why-body__column">
                                 <div class="why-body-item">
-                                    <div class="why-body-item__icon"><img src="icons/1-advantage.svg" alt="plate"></div>
+                                    <span class="icon-platter"></span>
                                     <div class="why-body-item-body">
                                         <h2 class="why-body-item__title">Reliable and flawless</h2>
                                         <p class="why-body-item__text">We are able to serve events from 2 to 2000 guests
@@ -166,7 +169,7 @@
                             </div>
                             <div class="why-body__column">
                                 <div class="why-body-item">
-                                    <div class="why-body-item__icon"><img src="icons/2-advantage.svg" alt="chef"></div>
+                                    <span class="icon-cap"></span>
                                     <div class="why-body-item-body">
                                         <h2 class="why-body-item__title">fits any size and budget</h2>
                                         <p class="why-body-item__text">We are able to serve events from 2 to 2000 guests
@@ -215,7 +218,10 @@
                 </div>
                 <div class="contact-content">
                     <div class="contact-content__column">
-                        <div class="contact-content__img"><img src="img/chef.jpg" alt="chef"></div>
+                        <picture class="contact-content__img">
+                            <source srcset="img/chef.webp" type="image/webp">
+                            <img src="img/chef.jpg" alt="chef">
+                        </picture>
                     </div>
                     <div class="contact-content__column">
                         <div class="contact-content-form">

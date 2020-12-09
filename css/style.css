@@ -58,12 +58,12 @@ h2 {
     display: block;
 }
 
-.btn-white {
+.btn--white {
     background-color: #ffffff;
     color: #000000;
 }
 
-.btn-black {
+.btn--black {
     background-color: #000;
     color: #fff;
 }
@@ -91,7 +91,7 @@ h2 {
     margin-right: 10px;
 }
 
-.item-active {
+.lang__item--active {
     background-color: #000;
     color: #fff;
     display: block;
@@ -181,6 +181,7 @@ h2 {
 }
 
 .private__image {
+    display: block;
     height: 100%;
     overflow: hidden;
 }
@@ -281,15 +282,15 @@ h2 {
 }
 
 .product-item__link {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: underline;
     color: #000;
     font-size: 15px;
     line-height: 25px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    display: inline-block;
-    margin-bottom: 15px;
-    text-decoration: underline;
-    display: block;
+    margin-top: auto;
 }
 
 .why-top {
@@ -344,14 +345,19 @@ h2 {
     display: flex;
 }
 
-.why-body-item__icon {
+.why-body-item span {
     flex: 0 0 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 60px;
+    transition: transform 0.5s ease-in-out;
 }
 
+.why-body-item:hover span {
+    transform: translateX(25px);
+}
 .why-body-item-body {
     flex: 1 1 auto;
     padding-left: 11px;
@@ -441,12 +447,13 @@ h2 {
 }
 
 .contact-content__img {
+    display: block;
     height: 100%;
     overflow: hidden;
 }
 
 .contact-content__img img {
-    height: 100%;
+    height: inherit;
     object-fit: cover;
     object-position: center;
 }
