@@ -436,6 +436,14 @@ h2 {
     margin-right: 0px;
 }
 
+.contact-social__item svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-social__item:hover {
+    fill: rgb(196, 40, 40);
+}
 .contact-content {
     display: flex;
     max-height: 480px;
