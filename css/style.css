@@ -56,12 +56,20 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(133, 141, 24);
+    
 }
 
 .btn--white {
     background-color: #ffffff;
     color: #000000;
 }
+
 
 .btn--black {
     background-color: #000;
@@ -257,6 +265,7 @@ h2 {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    box-shadow: 0px 2px 5px #000;
 }
 
 .product-item__title {
@@ -278,6 +287,7 @@ h2 {
     width: 155px;
     margin-bottom: 20px;
     text-align: center;
+    box-shadow: 0px 2px 5px #000;
 
 }
 
