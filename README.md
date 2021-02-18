@@ -1,2 +1,2 @@
 # landing-template
-Studying landing page with CSS and JS
+Studying landing page
