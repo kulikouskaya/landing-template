@@ -1,2 +1,2 @@
-# landing-template
+# landing-template #
 Studying landing page
