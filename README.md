@@ -1,2 +1,2 @@
 # landing-template #
-Studying landing page
+Studying landing page, desktop version
